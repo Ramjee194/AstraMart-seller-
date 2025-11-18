@@ -8,10 +8,10 @@ export const loginUser = createAsyncThunk(
       let res;
       if (isGoogleSignup && googleData) {
         // Google OAuth login/signup
-        res = await API.post("/auth/google", googleData);
+        res = await API.post("/api/auth/google", googleData);
       } else {
         // Regular email/password login
-        res = await API.post("/auth/login", { email, password });
+        res = await API.post("/api/auth/login", { email, password });
       }
       localStorage.setItem("token", res.data.token);
       return res.data.user;
@@ -25,7 +25,7 @@ export const registerUser = createAsyncThunk(
   "user/register",
   async (payload, { rejectWithValue }) => {
     try {
-      const res = await API.post("/auth/register", payload);
+      const res = await API.post("/api/auth/register", payload);
       localStorage.setItem("token", res.data.token);
       return res.data.user;
     } catch (err) {
@@ -38,7 +38,7 @@ export const googleLogin = createAsyncThunk(
   "user/googleLogin",
   async (googleData, { rejectWithValue }) => {
     try {
-      const res = await API.post("/auth/google", googleData);
+      const res = await API.post("/api/auth/google", googleData);
       localStorage.setItem("token", res.data.token);
       return res.data.user;
     } catch (err) {
