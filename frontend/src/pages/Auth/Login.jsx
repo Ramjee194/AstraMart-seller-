@@ -81,7 +81,7 @@ const Login = () => {
   `;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center p-4 relative overflow-hidden">
       {/* Inject inline styles */}
       <style>{styles}</style>
       
@@ -109,11 +109,7 @@ const Login = () => {
           
           {/* Header */}
           <div className="text-center mb-8">
-            <div className="mx-auto w-20 h-20 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl flex items-center justify-center mb-4 shadow-lg">
-              <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-              </svg>
-            </div>
+           
             <h1 className="text-4xl font-bold text-white mb-2">Welcome Back</h1>
             <p className="text-purple-200 text-lg">Sign in to continue your journey</p>
           </div>
@@ -230,7 +226,7 @@ const Login = () => {
               className={`w-full py-4 px-6 rounded-2xl font-semibold text-white transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus:ring-4 focus:ring-cyan-500/30 ${
                 loading || !isFormValid
                   ? 'bg-gray-600 cursor-not-allowed opacity-50'
-                  : 'bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 shadow-lg hover:shadow-cyan-500/25'
+                  : 'bg-gradient-to-r from-cyan-500  hover:from-cyan-300 hover:to-indigo-500 shadow-lg hover:shadow-cyan-500/25'
               }`}
             >
               {loading ? (
@@ -280,7 +276,7 @@ const Login = () => {
               to="/register" 
               className="text-cyan-400 hover:text-cyan-300 font-semibold transition-colors duration-200 hover:underline"
             >
-              Create one now
+              Sign-Up Now
             </Link>
           </p>
         </div>

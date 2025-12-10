@@ -123,7 +123,7 @@ const Home = () => {
             <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-2xl">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* Mock Dashboard Preview */}
-                <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl p-4 text-white">
+                <div className="bg-gradient-to-br from-gray-600 to-black rounded-xl p-4 text-white">
                   <div className="flex items-center justify-between mb-4">
                     <span className="font-semibold">Sales</span>
                     <span>📈</span>
@@ -131,7 +131,7 @@ const Home = () => {
                   <p className="text-2xl font-bold">₹2,45,678</p>
                   <p className="text-blue-100 text-sm">+12.5% this month</p>
                 </div>
-                <div className="bg-gradient-to-br from-green-500 to-blue-500 rounded-xl p-4 text-white">
+                <div className="bg-gradient-to-br from-green-600 to-black rounded-xl p-4 text-white">
                   <div className="flex items-center justify-between mb-4">
                     <span className="font-semibold">Orders</span>
                     <span>📦</span>
@@ -139,7 +139,7 @@ const Home = () => {
                   <p className="text-2xl font-bold">1,234</p>
                   <p className="text-green-100 text-sm">+8.2% this month</p>
                 </div>
-                <div className="bg-gradient-to-br from-orange-500 to-pink-600 rounded-xl p-4 text-white">
+                <div className="bg-gradient-to-br from-indigo-900 to-green-400 rounded-xl p-4 text-white">
                   <div className="flex items-center justify-between mb-4">
                     <span className="font-semibold">Products</span>
                     <span>🛍️</span>
@@ -224,7 +224,7 @@ const Home = () => {
               <div key={index} className="text-center relative">
                 {/* Connecting Line */}
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-12 left-1/2 w-full h-0.5 bg-blue-200 -z-10"></div>
+                  <div className="hidden lg:block absolute top-12 left-1/2 w-full h-0.5 bg-green-200 -z-10"></div>
                 )}
                 
                 <div className="bg-blue-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -246,7 +246,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Grow Your Business?

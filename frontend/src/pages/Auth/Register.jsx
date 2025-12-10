@@ -142,7 +142,8 @@ const Register = () => {
 
   return (
     <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4 relative overflow-hidden">
+      <div className="min-h-screen 
+      bg-gradient-to-br  from-slate-700 to-slate-900 flex items-center justify-center p-4 relative overflow-hidden">
         {/* Inject inline styles */}
         <style>{styles}</style>
         
@@ -170,11 +171,7 @@ const Register = () => {
             
             {/* Header */}
             <div className="text-center mb-8">
-              <div className="mx-auto w-20 h-20 bg-gradient-to-r from-green-500 to-blue-600 rounded-2xl flex items-center justify-center mb-4 shadow-lg">
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
-                </svg>
-              </div>
+             
               <h1 className="text-4xl font-bold text-white mb-2">Join Us</h1>
               <p className="text-purple-200 text-lg">Create your account to get started</p>
             </div>
@@ -394,7 +391,7 @@ const Register = () => {
                 className={`w-full py-4 px-6 rounded-2xl font-semibold text-white transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus:ring-4 focus:ring-green-500/30 ${
                   loading || !isFormValid
                     ? 'bg-gray-600 cursor-not-allowed opacity-50'
-                    : 'bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 shadow-lg hover:shadow-green-500/25'
+                    : 'bg-gradient-to-r from-blue-500 to-blue-600  hover:to-indigo-700 shadow-lg hover:shadow-green-500/25'
                 }`}
               >
                 {loading ? (
